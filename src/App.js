@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+
+import CampoTexto from './componentes/CampoTexto';
+import Banner from './componentes/banner/Banner.js';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner/>
+      <CampoTexto label="Nome" placeholder='Digite o seu nome'/>
+      <CampoTexto label="Cargo" placeholder='Digite seu cargo'/>
+      <CampoTexto label="Imagens" placeholder='coloque o endereço da imagem do funcionário'/>
+      
     </div>
   );
 }
